@@ -1,0 +1,17 @@
+/vendor/
+/.buildpath
+/.project
+/composer.lock
+/.settings/
+/public/assets/n2n/
+/public/assets/n2n-impl-web-dispatch/
+/public/assets/n2n-impl-web-ui/
+/public/assets/n2nutil-jquery/
+/public/assets/rocket/
+/var/etc/n2n/
+/var/etc/n2n-impl-persistence-orm/
+/var/etc/n2n-impl-web-dispatch/
+/var/etc/n2n-impl-web-ui/
+/var/etc/n2nutil-jquery/
+/var/etc/rocket/
+
