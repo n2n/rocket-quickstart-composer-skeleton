@@ -1,0 +1,9 @@
+{
+    "menuGroups": {
+        "Modul qs5": {
+            "qs5-blog-article": "Artikel",
+            "qs5-blog-category": "Kategorien",
+            "qs5-blog-comment": "Kommentare"
+        }
+    }
+}
