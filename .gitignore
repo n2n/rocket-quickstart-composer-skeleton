@@ -14,4 +14,7 @@
 /var/etc/n2n-impl-web-ui/
 /var/etc/n2nutil-jquery/
 /var/etc/rocket/
+/var/log/
+/var/tmp/
+/var/bak/rocket
 
