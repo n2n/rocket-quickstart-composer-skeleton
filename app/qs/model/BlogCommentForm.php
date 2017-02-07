@@ -1,8 +1,8 @@
 <?php
-namespace qs1\model;
+namespace qs\model;
 
 use n2n\web\dispatch\Dispatchable;
-use qs1\bo\BlogArticle;
+use qs\bo\BlogArticle;
 use n2n\web\dispatch\map\bind\BindingDefinition;
 use n2n\impl\web\dispatch\map\val\ValNotEmpty;
 use n2n\impl\web\dispatch\map\val\ValEmail;
@@ -29,7 +29,7 @@ class BlogCommentForm implements Dispatchable {
 		return $this->email;
 	}
 
-	public function setEmail($email) {
+	public function setEmail(string $email) {
 		$this->email = $email;
 	}
 
@@ -45,7 +45,7 @@ class BlogCommentForm implements Dispatchable {
 		return $this->content;
 	}
 
-	public function setContent($content) {
+	public function setContent(string $content) {
 		$this->content = $content;
 	}
 

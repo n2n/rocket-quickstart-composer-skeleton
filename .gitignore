@@ -8,6 +8,8 @@
 /public/assets/n2n-impl-web-ui/
 /public/assets/n2nutil-jquery/
 /public/assets/rocket/
+/public/files/
+/var/bak/rocket/
 /var/etc/n2n/
 /var/etc/n2n-impl-persistence-orm/
 /var/etc/n2n-impl-web-dispatch/
@@ -16,5 +18,3 @@
 /var/etc/rocket/
 /var/log/
 /var/tmp/
-/var/bak/rocket
-

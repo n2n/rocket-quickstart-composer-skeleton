@@ -1,11 +1,11 @@
 <?php
-namespace qs1\model;
+namespace qs5\model;
 
 use n2n\context\RequestScoped;
 use n2n\persistence\orm\EntityManager;
-use qs1\bo\BlogArticle;
+use qs5\bo\BlogArticle;
 use n2n\io\managed\File;
-use qs1\bo\BlogComment;
+use qs5\bo\BlogComment;
 
 class BlogDao implements RequestScoped {
 
@@ -28,7 +28,7 @@ class BlogDao implements RequestScoped {
 	 * @param string $urlPart
 	 * @return \qs3\bo\BlogArticle
 	 */
-	public function getBlogArticleByUrlPart($urlPart){
+	public function getBlogArticleByUrlPart(string $urlPart){
 		$criteria = $this->em->createSimpleCriteria(BlogArticle::getClass(), array('urlPart' => $urlPart));
 		return $criteria->toQuery()->fetchSingle();
 	}
@@ -37,7 +37,7 @@ class BlogDao implements RequestScoped {
 	 * @param int $id
 	 * @return \qs3\bo\BlogArticle
 	 */
-	public function getBlogArticleById($id) {
+	public function getBlogArticleById(int $id) {
 		return $this->em->find(BlogArticle::getClass(), $id);
 	}
 
@@ -47,7 +47,7 @@ class BlogDao implements RequestScoped {
 	 * @param string $content
 	 * @param File $image
 	 */
-	public function saveComment(BlogArticle $blogArticle, $email, $content, File $image = null) {
+	public function saveComment(BlogArticle $blogArticle, string $email, string $content, File $image = null) {
 		$comment = new BlogComment();
 		$comment->setBlogArticle($blogArticle);
 		$comment->setEmail($email);

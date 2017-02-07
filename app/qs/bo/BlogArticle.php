@@ -1,6 +1,6 @@
 <?php
 
-namespace qs1\bo;
+namespace qs\bo;
 
 use n2n\persistence\orm\CascadeType;
 use n2n\persistence\orm\annotation\AnnoOneToMany;
@@ -70,7 +70,7 @@ class BlogArticle extends ObjectAdapter {
 		return $this->online;
 	}
 
-	public function setOnline($online) {
+	public function setOnline(bool $online) {
 		$this->online = $online;
 	}
 	

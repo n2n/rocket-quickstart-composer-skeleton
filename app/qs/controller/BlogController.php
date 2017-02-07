@@ -1,13 +1,13 @@
 <?php
 
-namespace qs1\controller;
+namespace qs\controller;
 
 use n2n\web\http\controller\ControllerAdapter;
 use n2n\reflection\annotation\AnnoInit;
 use n2n\web\http\annotation\AnnoPath;
-use qs1\model\BlogDao;
+use qs\model\BlogDao;
 use n2n\web\http\PageNotFoundException;
-use qs1\model\BlogCommentForm;
+use qs\model\BlogCommentForm;
 
 class BlogController extends ControllerAdapter {
 	private static function _annos(AnnoInit $ai) {
@@ -27,7 +27,7 @@ class BlogController extends ControllerAdapter {
 		$this->forward('..\view\overview.html', array('blogArticles' => $blogArticles));
 	}
 	
-	public function detail($urlPart) {
+	public function detail(string $urlPart) {
 		// Artikel holen
 		$blogArticle = $this->blogDao->getBlogArticleByUrlPart($urlPart);
 		// prüfen, ob artikel gefunden
@@ -39,7 +39,7 @@ class BlogController extends ControllerAdapter {
 		$this->forward('~\view\detail.html', array('blogArticle' => $blogArticle));
 	}
 	
-	public function doComment($blogId) {
+	public function doComment(int $blogId) {
 		// Artikel holen über ID
 		$blogArticle = $this->blogDao->getBlogArticleById($blogId);
 		// Prüfen, ob Artikel gefunden
@@ -59,7 +59,7 @@ class BlogController extends ControllerAdapter {
 		$this->forward('..\view\comment.html', array('commentForm' => $commentForm));
 	}
 	
-	public function doThanks($blogId) {
+	public function doThanks(int $blogId) {
 		// Artikel holen über ID
 		$blogArticle = $this->blogDao->getBlogArticleById($blogId);
 		// prüfen, ob Artikel gefunden
@@ -67,7 +67,7 @@ class BlogController extends ControllerAdapter {
 			throw new PageNotFoundException('invalid id: ' . $blogId);
 		}
 		
-		$this->forward('\qs1\view\thanks.html', array('blogArticle' => $blogArticle));
+		$this->forward('\qs\view\thanks.html', array('blogArticle' => $blogArticle));
 	}
 }
 

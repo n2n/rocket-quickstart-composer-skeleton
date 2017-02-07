@@ -1,7 +1,7 @@
 <?php
 	use n2n\impl\web\ui\view\html\HtmlView;
 	use n2n\web\ui\view\View;
-	use qs1\bo\BlogArticle;
+	use qs\bo\BlogArticle;
 	use n2n\l10n\DateTimeFormat;
 	use n2n\io\managed\img\impl\ThSt;
 	

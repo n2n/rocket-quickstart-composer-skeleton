@@ -1,6 +1,6 @@
 <?php
 
-namespace qs1\bo;
+namespace qs5\bo;
 
 use n2n\persistence\orm\CascadeType;
 use n2n\reflection\ObjectAdapter;

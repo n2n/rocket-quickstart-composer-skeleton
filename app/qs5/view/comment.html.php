@@ -1,6 +1,6 @@
 <?php
 	use n2n\impl\web\ui\view\html\HtmlView;
-	use qs1\model\BlogCommentForm;
+	use qs5\model\BlogCommentForm;
 	
 	$view = HtmlView::view($this);
 	$formHtml = HtmlView::formHtml($view);

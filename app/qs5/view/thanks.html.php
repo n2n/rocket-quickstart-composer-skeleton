@@ -1,7 +1,7 @@
 <?php
 	use n2n\impl\web\ui\view\html\HtmlView;
 	use n2n\web\ui\view\View;
-	use qs1\bo\BlogArticle;
+	use qs5\bo\BlogArticle;
 	
 	$view = HtmlView::view($this);
 	$html = HtmlView::html($view);

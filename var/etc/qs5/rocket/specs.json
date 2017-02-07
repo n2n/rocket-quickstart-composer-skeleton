@@ -1,8 +1,8 @@
 {
     "specs": {
-        "qs1-blog-article": {
+        "qs5-blog-article": {
             "type": "entity",
-            "entity": "qs1\\bo\\BlogArticle",
+            "entity": "qs5\\bo\\BlogArticle",
             "dataSourceName": null,
             "label": "Artikel",
             "pluralLabel": "Artikel",
@@ -173,9 +173,9 @@
             "modificators": [],
             "defaultMaskId": null
         },
-        "qs1-blog-category": {
+        "qs5-blog-category": {
             "type": "entity",
-            "entity": "qs1\\bo\\BlogCategory",
+            "entity": "qs5\\bo\\BlogCategory",
             "dataSourceName": null,
             "label": "Kategorie",
             "pluralLabel": "Kategorien",
@@ -258,9 +258,9 @@
             "modificators": [],
             "defaultMaskId": null
         },
-        "qs1-blog-comment": {
+        "qs5-blog-comment": {
             "type": "entity",
-            "entity": "qs1\\bo\\BlogComment",
+            "entity": "qs5\\bo\\BlogComment",
             "dataSourceName": null,
             "label": "Blog Comment",
             "pluralLabel": "Blog Comments",
@@ -406,9 +406,9 @@
         }
     },
     "commonEiMasks": [],
-	"menuItems": {
-	    "qs1-blog-article": [],
-	    "qs1-blog-category": [],
-	    "qs1-blog-comment": []
+    "menuItems": {
+		"qs5-blog-article": [],
+		"qs5-blog-category": [],
+		"qs5-blog-comment": []
 	}
 }
