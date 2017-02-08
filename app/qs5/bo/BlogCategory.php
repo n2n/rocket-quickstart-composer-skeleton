@@ -33,6 +33,9 @@ class BlogCategory extends ObjectAdapter {
 		$this->name = $name;
 	}
 	
+	/**
+	 * @return \qs5\bo\BlogArticle[]
+	 */
 	public function getArticles() {
 		return $this->articles;
 	}

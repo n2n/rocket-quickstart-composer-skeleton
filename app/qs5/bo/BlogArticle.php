@@ -30,7 +30,7 @@ class BlogArticle extends ObjectAdapter {
 		return $this->id;
 	}
 
-	public function setId(int $id = null) {
+	public function setId($id) {
 		$this->id = $id;
 	}
 
@@ -75,28 +75,28 @@ class BlogArticle extends ObjectAdapter {
 	}
 	
 	/**
-	 * @return \qs\bo\BlogComment[]
+	 * @return \qs5\bo\BlogComment[]
 	 */
 	public function getComments() {
 		return $this->comments;
 	}
 	
 	/**
-	 * @param \qs\bo\BlogComment[]
+	 * @param \qs5\bo\BlogComment[]
 	 */
 	public function setComments(\ArrayObject $comments) {
 		$this->comments = $comments;
 	}
 	
 	/**
-	 * @return \qs\bo\BlogCategory[]
+	 * @return \qs5\bo\BlogCategory[]
 	 */
 	public function getCategories() {
 		return $this->categories;
 	}
 	
 	/**
-	 * @param \qs\bo\BlogCategory[]
+	 * @param \qs5\bo\BlogCategory[]
 	 */
 	public function setCategories(\ArrayObject $categories) {
 		$this->categories = $categories;

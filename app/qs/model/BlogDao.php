@@ -16,7 +16,7 @@ class BlogDao implements RequestScoped {
 	}
 
 	/**
-	 * @return \qs3\bo\BlogArticle[]
+	 * @return \qs\bo\BlogArticle[]
 	 */
 	public function getOnlineBlogArticles() {
 		$criteria = $this->em->createSimpleCriteria(BlogArticle::getClass(), array('online' => true),
@@ -26,7 +26,7 @@ class BlogDao implements RequestScoped {
 
 	/**
 	 * @param string $urlPart
-	 * @return \qs3\bo\BlogArticle
+	 * @return \qs\bo\BlogArticle
 	 */
 	public function getBlogArticleByUrlPart(string $urlPart){
 		$criteria = $this->em->createSimpleCriteria(BlogArticle::getClass(), array('urlPart' => $urlPart));
@@ -35,7 +35,7 @@ class BlogDao implements RequestScoped {
 
 	/**
 	 * @param int $id
-	 * @return \qs3\bo\BlogArticle
+	 * @return \qs\bo\BlogArticle
 	 */
 	public function getBlogArticleById(int $id) {
 		return $this->em->find(BlogArticle::getClass(), $id);

@@ -35,14 +35,14 @@ class BlogComment extends ObjectAdapter {
 	}
 
 	/**
-	 * @return BlogArticle
+	 * @return \qs5\bo\BlogArticle
 	 */
 	public function getBlogArticle() {
 		return $this->blogArticle;
 	}
 
 	/**
-	 * @param BlogArticle $blogArticle
+	 * @param \qs5\bo\BlogArticle $blogArticle
 	 */
 	public function setBlogArticle(BlogArticle $blogArticle) {
 		$this->blogArticle = $blogArticle;
