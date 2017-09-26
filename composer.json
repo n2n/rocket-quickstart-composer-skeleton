@@ -14,7 +14,9 @@
 		"n2n/n2n-impl-web-ui" : "master-dev",
 		"n2n/n2n-mail" : "master-dev",
 		"php" : ">=7.0",
-		"n2n/rocket" : "master-dev",
+		"n2n/rocket" : "master-dev"
+	},
+	"require-dev": {
 		"n2n/hangar" : "master-dev"
 	}
 }
