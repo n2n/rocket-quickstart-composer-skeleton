@@ -5,18 +5,18 @@
 	"minimum-stability" : "dev",
 	"prefer-stable" : true,
 	"require" : {
-		"n2n/n2n" : "7.1.x-dev",
-		"n2n/n2n-batch" : "7.1.x-dev",
-		"n2n/n2n-context" : "7.1.x-dev",
-		"n2n/n2n-impl-persistence-meta" : "7.1.x-dev",
-		"n2n/n2n-impl-persistence-orm" : "7.1.x-dev",
-		"n2n/n2n-impl-web-dispatch" : "7.1.x-dev",
-		"n2n/n2n-impl-web-ui" : "7.1.x-dev",
-		"n2n/n2n-mail" : "7.1.x-dev",
+		"n2n/n2n" : "master-dev",
+		"n2n/n2n-batch" : "master-dev",
+		"n2n/n2n-context" : "master-dev",
+		"n2n/n2n-impl-persistence-meta" : "master-dev",
+		"n2n/n2n-impl-persistence-orm" : "master-dev",
+		"n2n/n2n-impl-web-dispatch" : "master-dev",
+		"n2n/n2n-impl-web-ui" : "master-dev",
+		"n2n/n2n-mail" : "master-dev",
 		"php" : ">=7.0",
-		"n2n/rocket" : "1.1.x-dev"
+		"n2n/rocket" : "master-dev"
 	},
 	"require-dev": {
-		"n2n/hangar" : "7.1.x-dev"
+		"n2n/hangar" : "master-dev"
 	}
 }
